@@ -1,0 +1,61 @@
+.nppa-register-form_wrapper .gform_previous_button.button,
+.nppa-register-form_wrapper .gform_next_button.button,
+.nppa-register-form_wrapper .gform_save_link.button, 
+.nppa-register-form_wrapper .gform_button.button{
+    -webkit-appearance: none!important;
+    background-color: #00208C !important;
+    color: #FFF !important;
+    text-decoration: none;
+    border: none;
+    padding: 20px 75px;
+    line-height: 21px;
+	cursor:pointer;
+    font-size: 20px;
+}
+.nppa-register-form_wrapper .gform_heading .gform_required_legend{
+    display: none;
+}
+.nppa-register-form_wrapper .gform_page_footer {
+    text-align: center;
+    margin-top: 30px !important;
+}
+.nppa-register-form_wrapper .gform_description{
+    float:left;
+    margin-bottom: 20px;;
+}
+
+.nppa-register-form_wrapper .styled-checkbox input[type=radio]:checked + label {
+    background: #00208C;
+    color: #fff;
+}
+.nppa-register-form_wrapper .styled-checkbox .ginput_container_radio .gfield_radio {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.nppa-register-form_wrapper .styled-checkbox .gfield-choice-input+label {
+    background: #FAFAFA;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #00208C;
+}
+.nppa-register-form_wrapper .styled-checkbox input[type=radio] {
+    border: 0px;
+    min-width: 0px;
+    width: 0px;
+    height: 0px;
+    margin-right: 0px;
+}
+.nppa-register-form_wrapper .styled-checkbox input[type=radio]:checked::before{
+    display: none;
+}
+.nppa-register-form_wrapper .styled-checkbox .ginput_container_radio .gfield_radio > div {
+    /*flex: 1;*/
+    max-width: 50%;
+}
+.nppa-register-form_wrapper .styled-checkbox .gfield-choice-input+label:hover {
+    background: #00208C;
+    color: #fff;
+}
