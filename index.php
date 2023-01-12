@@ -88,7 +88,9 @@ class pharmacyPurchasingCustomization{
 
 		## Refund the payement
 		if(isset($_POST['refund-payment'])){
-			$entry['168'] = '-'.$_POST['refund-amount'];
+			$entry['176'] = '-'.$_POST['refund-amount'];
+			## Update entry
+			GFAPI::update_entry($entry);
 		}
 
 		## Update payment status and amount
@@ -106,9 +108,9 @@ class pharmacyPurchasingCustomization{
 
 			## Update name of editor
 			gform_update_meta( $entry_id, 'updator_name', $user->data->user_login );
-		}
 			## Update entry
 			GFAPI::update_entry($entry);
+		}
 
 	}
 
@@ -329,7 +331,7 @@ class pharmacyPurchasingCustomization{
 
 	## Check exisitng user entry for event
 	public function checkUserEntry( $validation_result ) {
-    	$form = $validation_result['form'];
+    $form = $validation_result['form'];
 		foreach( $form['fields'] as &$field ) {
 
 			$cssClasses = explode( " ", $field->cssClass );
